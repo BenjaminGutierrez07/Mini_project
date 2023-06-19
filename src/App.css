@@ -9,6 +9,26 @@
     gap: 30px;
 }
 
+#subtitle {
+    display: flex;
+    justify-content: space-between;
+}
+#A {
+    margin: 0;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    color: #ffff;
+}
+#B {
+    margin: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    color: #ffff;
+}
+
 /*Here put in order the information*/
 #location {
     display: flex;
@@ -35,6 +55,14 @@
     font-size: 20px;
 }
 
+#star {
+    display: flex;
+    gap: 7px;
+}
+.bi {
+    margin: 1rem 0;
+    color: #EB5757;;
+}
 
 #date {
     display: flex;
