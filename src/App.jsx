@@ -28,13 +28,29 @@ function App() {
   console.log(data);
   return (
     <>
-    <div id="container">
-        <Logo />
-        {/* Aquí te dejo un ejemplo de cómo podrías imprimir varios elementos a la vez. */}
-        {data.map((el, i) => {
-          return <h1 key={i}>{el.city}</h1>;
-        })}
-    </div>
+      <div id="container">
+          <Logo />
+          <div id="location">
+          {data.map((el, i) => {
+            return ( 
+            <>
+              <div>
+              <img id="img" key={i}src={el.photo}/>
+              <div id="info">
+                <div id="date">
+                <h1 key={i}>{el.superHost}</h1>
+                <h1 key={i}>{el.type}</h1>
+                <h1 key={i}>{el.beds}</h1>
+                <h1 key={i}>{el.rating}</h1>
+                </div>
+                <h1 key={i}>{el.title}</h1>
+              </div>
+              </div>
+            </>
+            )
+          })}
+          </div>
+      </div>
     </>
   );
 }

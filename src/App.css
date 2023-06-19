@@ -1,3 +1,26 @@
+/*This the central box*/
 #root {
     padding: 2rem 5rem;
 }
+#container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/*Here put in order the information*/
+#location {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/*Here are the characteristics of the Apartaments*/
+#img {
+    width: 395px;
+    height: 269px;
+    border-radius: 24px;
+}
+
