@@ -2,6 +2,16 @@ import React from "react";
 import "./Logo.css";
 
 function Logo () {
+
+  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
+
+  const handleInputClick = () => {
+    setIsOverlayVisible(true);
+  };
+
+  const handleOverlayClose = () => {
+    setIsOverlayVisible(false);
+  };
     return (
         <div id="menuBar">
                 <svg width="96" height="19" viewBox="0 0 96 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -9,14 +19,17 @@ function Logo () {
                 <path d="M8.22724 4.5C9.38194 2.5 12.2687 2.5 13.4234 4.5L19.0526 14.25C20.2073 16.25 18.7639 18.75 16.4545 18.75H5.19615C2.88675 18.75 1.44338 16.25 2.59808 14.25L8.22724 4.5Z" fill="#EB5757"/>
                 </svg>
             <div id="search">
-                <input id="place" placeholder="Place"/>
-                <input id="guest" placeholder="Add guests"/>
+                <input id="place" placeholder="Place" onClick={handleInputClick}/>
+                <input id="guest" placeholder="Add guests" onClick={handleInputClick} />
                 <button id="logo">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
                 <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
                 </svg>
                 </button>
             </div>
+            {isOverlayVisible && (
+            <div className="overlay" onClick={handleOverlayClose}></div>
+            )}
         </div>
     );
 }
