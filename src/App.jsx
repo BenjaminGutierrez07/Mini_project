@@ -38,12 +38,14 @@ function App() {
               <img id="img" key={i}src={el.photo}/>
               <div id="info">
                 <div id="date">
-                <h1 key={i}>{el.superHost}</h1>
-                <h1 key={i}>{el.type}</h1>
-                <h1 key={i}>{el.beds}</h1>
-                <h1 key={i}>{el.rating}</h1>
+                  <div id="box">
+                  <p key={i}>{el.superHost}</p>
+                  <p key={i}>{el.type} .</p>
+                  <p key={i}>{el.beds}</p>
+                  </div>
+                <p key={i}>{el.rating}</p>
                 </div>
-                <h1 key={i}>{el.title}</h1>
+                <p id="title" key={i}>{el.title}</p>
               </div>
               </div>
             </>
