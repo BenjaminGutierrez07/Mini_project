@@ -1,0 +1,80 @@
+#filtro{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border-radius: 100px;  
+  }
+  .search-options {
+    padding: 0 50px;
+  }
+  
+
+  #filtroB{
+    width: 600px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    border-radius: 100px;  
+  }
+  .guest-counter{
+    padding: 0 50px;
+  }
+  .column {
+    display: flex;
+    flex-direction: column;
+  }
+  #old{
+    margin: 5px 0;
+    color: #BDBDBD;
+  }
+  #less{
+    width: 25px;
+    margin-right: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  #more{
+    width: 25px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  #name{
+    margin: 5px 0;
+  }
+
+
+
+#find {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    box-shadow: 0px 1px 6px red;
+    background-color:  #EB5757;
+    border-radius: 20px;
+    color: white;
+    gap: 1rem;
+  }
+
+  #destiny {
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0;
+  }
+  #people {
+    width: 500px;
+    height: 50px;
+    padding: 20px;
+    border-radius: 20px;
+    border: 0;
+  }
