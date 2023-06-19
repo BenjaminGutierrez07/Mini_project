@@ -11,7 +11,7 @@ export default function Filter() {
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
 
-    const searchOptions = ['Bolivia', 'Francia', 'Ecuador'];
+    const searchOptions = ['Helsinki', 'Turku', 'Vaasa', 'Oulu'];
     setOptions(searchOptions);
     setShowOptions(inputValue.length > 0);
   };
