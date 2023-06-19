@@ -6,15 +6,16 @@
 #search {
     width: 350px ;
     display: flex;
-    justify-content:center;
+    justify-content:left;
     gap: 30px;
-    border: 4px solid rgb(247, 246, 246);
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     background-color: rgb(255, 255, 255);
 }
 
 
 #place {
+    margin: 5px;
     width: 100px;
     height: 40px;
     display: flex;
@@ -23,11 +24,10 @@
     background-color: #ffff;
     font-size: 20px;  
     border: 0;
+    color: #BDBDBD;
 }
-#place::placeholder {
-    text-align: center;
-} 
 #guest {
+    margin: 5px;
     padding: 0;
     width: 120px;
     height: 40px;
@@ -36,30 +36,8 @@
     align-items: center;
     background-color: #ffff;
     border: 4px solid rgb(247, 246, 246);
-    font-size: 15px;
+    font-size: 20px;
     border-top: 0; 
     border-block-end: 0;  
+    color: #BDBDBD;
 }
-#guest::placeholder {
-    text-align: center;
-} 
-#logo {
-    padding: 0;
-    width: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    background-color: #ffff;
-    border: 0;
-}
-
-.overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-  }

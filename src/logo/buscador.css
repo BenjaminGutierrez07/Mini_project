@@ -1,11 +1,66 @@
-#popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    width: 100%;
-    max-width: 600px;
-    height: 45vh;
-    display: none;
-  }
+#logo {
+  padding: 0;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  background-color: #ffff;
+  border: 0;
+}
+
+.white-window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 55%;
+  background-color: white;
+  opacity: 1; /* Ajusta la opacidad para oscurecer el fondo */
+  z-index: 999; /* Asegura que la ventana esté en la parte superior */
+}
+
+#windowsearch {
+  width: 1500px;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 100px;  
+  gap: 4rem;
+}
+
+#destiny {
+  width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+}
+#people {
+  width: 500px;
+  height: 50px;
+  border-radius: 30px;
+  border: 0;
+}
+
+#find {
+  width: 150px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  box-shadow: 0px 1px 6px red;
+  background-color:  #EB5757;
+  border-radius: 20px;
+  color: white;
+  gap: 1.5rem;
+}
+
+.bii {
+  color: white;
+}
